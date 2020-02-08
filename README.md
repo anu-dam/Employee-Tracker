@@ -4,7 +4,7 @@
 
 #### Technologies
 
-Node.Js / NPM /Inquirer.Js / MySQL.Js /
+Node.Js / NPM /Inquirer.Js / MySQL.Js
 
 #### Authors
 
