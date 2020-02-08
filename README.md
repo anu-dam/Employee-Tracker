@@ -1,5 +1,6 @@
 # Employee-Tracker
 
+<hr>
 ### Command Line Application for Employee Management System
 
 A NodeJS CLI that helps track employees along with giving the user to view, add, delete, and update employees. They also have control over viewing, adding, and deleting roles they might have, and departments they might work in
