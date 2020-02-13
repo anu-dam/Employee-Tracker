@@ -213,6 +213,7 @@ function addEmployee() {
   });
 }
 
+
 function updateEmployeeRole() {
   //let array = [];
   const query = "SELECT employee.employee_id as value, " +
@@ -241,12 +242,12 @@ function updateEmployeeRole() {
               connection.query("UPDATE employee SET role_id = ? WHERE employee_id = ?",
                 [answer2.role, answer1.employee], function (err, res) {
                   if (err) {
-                    if (err.errno === 1451) {
-                      console.log("You cannot delete this record because of foreign key constrait!");
+                    if (err) {
+                      console.log("Not allowed due to foreign key !");
                     } else {
                       console.log("An error occured!");
                     }
-                    return init();
+                    return initializing();
                   }
                   if (res.affectedRows > 0) {
                     console.log(res.affectedRows + " record updated successfully!");
@@ -260,10 +261,3 @@ function updateEmployeeRole() {
   });
 }
 
-
-
-
-//Exit
-// function exit() {
-//   connection.end();
-// }
